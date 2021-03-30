@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
+
+.header {
+  position: relative; }
+  .header__top {
+    background-image: linear-gradient(140deg, #fff 0%, #fff 50%, #f3f6f7 50%);
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    background-size: 200%;
+    background-position: 50%; }
+    .header__top-overlaping {
+      position: absolute;
+      bottom: -15rem;
+      clip-path: polygon(53% 43%, 100% 8%, 100% 100%, 0 100%, 0 9%); }
+      .header__top-overlaping-img {
+        width: 100%; }
+    .header__top-nav {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end; }
+      .header__top-nav--list {
+        padding: 0.5rem; }
+      .header__top-nav--link {
+        font-size: 1.8rem;
+        color: black;
+        text-decoration: none;
+        padding: 1rem 1rem;
+        background-color: transparent; }
+        .header__top-nav--link:hover {
+          color: #005e9b; }
+        .header__top-nav--link:hover .icon {
+          color: #005e9b;
+          background-color: transparent; }
+
+.logo {
+  top: 0%;
+  left: 5%;
+  width: 8%;
+  position: absolute; }
+
+.icon {
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 100%;
+  background-color: #a1b728;
+  margin-right: 0.4rem; }
+  .icon-1 {
+    padding: 1rem 1.7rem;
+    transition: all 0.2s; }
+  .icon-2 {
+    padding: 1.1rem 1.4rem;
+    transition: all 0.3s; }
+  .icon-3 {
+    padding: 1rem 1.5rem;
+    transition: all 0.3s; }
+  .icon-4 {
+    padding: 1.1rem 1.3rem;
+    transition: all 0.3s; }
+
+.header {
+  height: 100vh;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  position: center; }
